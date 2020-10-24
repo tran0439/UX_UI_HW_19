@@ -11,7 +11,7 @@ html, body {
 .hero-image {
   position: relative;
   height: 500px;
-  overflow: hidden;
+  /*overflow: hidden;*/
   background: url('https://images.unsplash.com/photo-1600132806370-bf17e65e942f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1714&q=80')no repeat center';
   background-size: cover;
 }
@@ -130,12 +130,12 @@ header {
 .center-this-guy {
   text-align: center;
 }
+
 footer {
   background-color: #74747b;
   width: 100%;
 }
 footer ul {
-  display: inline-block;
   vertical-align: top;
   
 }
@@ -162,7 +162,14 @@ footer ul {
   width:auto;
   padding-left: 300px;
   padding-top: ;
+  top: 50%;
+    left: 50%;
+    transform: translate(25%, 5%);
+    text-align: left;
+    color: white;
+    font-weight: 500;
 }
+
 #two { 
   overflow:hidden;
   max-width: 500px;
@@ -171,6 +178,12 @@ footer ul {
   border:100px #ccc;
   min-width: height 100%;
   color: white;
+  top: 50%;
+    left: 50%;
+    transform: translate(40%, 10%);
+    text-align: left;
+    color: white;
+    font-weight: 500;
 }/* Grid and flex Containters*/
 
 .flexContainer {
@@ -393,6 +406,27 @@ body{
   text-align: center;
   text-size-adjust: 20px;
 }
+
+/*side navigator*/
+#myBtn:hover {
+  background-color: #555;
+  }
+
+#topBtn {
+  display: none;
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  z-index: 99;
+  font-size: 15px;
+  border: none;
+  outline: none;
+  background-color: #717abb;
+  color: #fff;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 150px;
+  }
 
 @media only screen and (max-width: 600px) {
   h1 {
